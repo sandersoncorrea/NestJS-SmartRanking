@@ -3,7 +3,7 @@ import { CriarJogadorDto } from './dtos/criar-jogador.dto';
 import { Jogador } from './interfaces/jogador.interface';
 import { v4 as uuid } from 'uuid';
 
-@Injectable()
+@Injectable() // classe que pode ser gerenciada pelo Nest IoC Container
 export class JogadoresService {
   private jogadores: Jogador[] = [];
 
