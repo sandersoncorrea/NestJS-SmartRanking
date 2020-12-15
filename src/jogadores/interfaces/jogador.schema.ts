@@ -4,13 +4,23 @@ export const JogadorSchema = new mongoose.Schema(
   {
     telefoneCelular: {
       type: String,
+    },
+    email: {
+      type: String,
       unique: true,
     },
-    email: { type: String, unique: true },
-    name: String,
-    ranking: String,
-    posicaoRanking: Number,
-    urlFotoJogador: String,
+    nome: {
+      type: String,
+    },
+    ranking: {
+      type: String,
+    },
+    posicaoRanking: {
+      type: Number,
+    },
+    urlFotoJogador: {
+      type: String,
+    },
   },
   {
     timestamps: true,

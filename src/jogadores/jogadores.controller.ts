@@ -5,7 +5,8 @@ import { JogadoresService } from './jogadores.service';
 
 @Controller('api/v1/jogadores')
 export class JogadoresController {
-  constructor(private readonly jogadoresService: JogadoresService) {} // Injeção de dependência (JogadoresService)
+  constructor(private readonly jogadoresService: JogadoresService) {}
+  // Injeção de dependência (JogadoresService)
 
   @Post()
   async criarAtualizarJogador(@Body() criarJogadorDto: CriarJogadorDto) {
